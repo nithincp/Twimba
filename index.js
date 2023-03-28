@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 let storedTweetsData = JSON.parse(localStorage.getItem('tweetsData'))
 
-let tweetsData = storedTweetsData ? storedTweetsData:tweetsDataFromFile
+let tweetsData = storedTweetsData ? storedTweetsData:tweetsDataExport
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){
